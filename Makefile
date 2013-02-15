@@ -1,4 +1,4 @@
-pdf : pdf/plans.pdf pdf/bang_bang.pdf clean
+pdf : pdf/plans.pdf pdf/bang_bang.pdf pdf/Just_a_Gigolo.pdf clean
 
 pdf/%.pdf : src/ly/%.ly
 	mkdir -p pdf
