@@ -62,5 +62,24 @@
 	}
 }
 
+
+\score {
+
+
+\baseTab 
+ 	\relative  {
+		\time 4/4 \bar "|:"
+		a'8\1 f\2 d\3 a\4 g\4 e\5 d\5 b\5
+		g\6 gis\6 b\5 d\5 f\4 gis\4 b\3 f'\2 
+		e1\2~e1\2 \bar ":|" 
+	}
+	\chordmode {
+		\set majorSevenSymbol = \markup { 7M } \time 4/4
+     	d1:m9 g:7.5+ c:maj7 c:maj7 
+	}
+}
+
+
+
 \include "common/licence.ly"
 
