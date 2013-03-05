@@ -79,6 +79,41 @@
 	}
 }
 
+\score {
+
+\baseTab 
+ 	\relative  {
+		\time 4/4 \bar "|:"
+		f,8 a c\3 e\2 g f\2 e\2 d dis
+		b\3 bes gis\4 f4 fis4 g1\4~g1\4
+		\bar ":|" 
+	}
+	\chordmode {
+		\set majorSevenSymbol = \markup { 7M } \time 4/4
+     	d1:m9 g:7.5+ c:maj7 c:maj7 
+	}
+}
+
+
+
+\score {
+
+
+\baseTab 
+ 	\relative  {
+		\time 4/4 \bar "|:"
+		ges,8 g b d\5 f g\4 b\3 d f\2 a aes g
+		f\2 d b\3 g\4 fis f d\5 b 
+		gis ges g4 
+		\bar ":|" 
+	}
+	\chordmode {
+		\time 4/4
+     	g1:7  
+	}
+}
+
+
 
 
 \include "common/licence.ly"
