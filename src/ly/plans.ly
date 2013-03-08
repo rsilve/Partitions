@@ -94,6 +94,20 @@
 	}
 }
 
+\score {
+
+\baseTab 
+ 	\relative  {
+		\time 4/4 \bar "|:"
+		e8\2 d c\3 a g\4 ges f d\5 
+		b4 gis fis g8 b c1~c1
+		\bar ":|" 
+	}
+	\chordmode {
+		\set majorSevenSymbol = \markup { 7M } \time 4/4
+     	d1:m9 g:7.5+ c:maj7 c:maj7 
+	}
+}
 
 
 \score {
