@@ -169,6 +169,31 @@
 
 
 
+\score {
+
+\baseTab 
+	\relative {
+		\time 4/4 
+		\partial 8 gis8\4 	
+		\bar "|:" 
+		a'\1 g\1 e\2 d\2 b\3 a\3
+		g\4 e\4 
+		d\5 c\5 d\5 ees\5 \times 2/3 {f\4 g\4 gis\4} 
+		bes\3 c\3 b1\3~b1\3 
+		
+		 \bar ":|" 
+	}
+	\chordmode {
+	\set majorSevenSymbol = \markup { 7M } \time 4/4
+     	\partial 8 r8
+		a1:m9 d:7.5+ g:maj7 g:maj7 
+	}
+
+
+}
+
+
+
 
 
 \include "common/licence.ly"
