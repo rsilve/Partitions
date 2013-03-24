@@ -9,7 +9,7 @@
 \n+						return 'NEWLINE';
 ":"						return 'REPEAT'
 "_"						return 'PLACEHOLDER'
-"|"						return 'BAR'
+"|"{1,2}				return 'BAR'
 [ABCDEFG]				return 'NOTE';
 [\w\d\+\-\#°ø]+			return 'MODIFIER';
 "/"						return 'BASE';
@@ -50,14 +50,18 @@ measures
 
 measure_repeat
 	: REPEAT measure_repeat	{ $2.repeatLeft = true; $$ = $2 }
-	| measure REPEAT		{ $1.repeatRight = true; $$ = $1 }
-	| measure
+	| measure_part REPEAT	{ $1.repeatRight = true; $$ = $1 }
+	| measure_part
 	;
 
+measure_part
+	: PART LEFT_PARAN NOTE RIGHT_PARAN measure { $5.part = $3; $$ = $5 }
+	| measure
+	;
+	
 measure
 	: EMPTY					{ $$ = { empty: true } }
 	| SAME					{ $$ = { same: true } }
-	| PART LEFT_PARAN NOTE RIGHT_PARAN chords { $5.part = $3; $$ = $5 } 
 	| chords				
 		%{
 			var total = 0;

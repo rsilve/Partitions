@@ -66,8 +66,8 @@ exports.jison = {
 		test.done();
   },
   bar : function (test) {
-        test.expect(12);
-        ["A", "|A", "A|", "|A|"].forEach(function(g) {
+        test.expect(15);
+        ["A", "|A", "A|", "|A|", "||A |"].forEach(function(g) {
         	var rows = grid.parse(g);
 			test.ok(rows);
 			test.equal(rows.length, 1);     // 1 ligne
@@ -110,14 +110,15 @@ exports.jison = {
 		test.done();
   },
   part : function (test) {
-        test.expect(7);
+        test.expect(8);
         var rows = grid.parse("@(C) A");
         
 		test.ok(rows);
 		test.equal(rows.length, 1);     // 1 ligne
 		test.equal(rows[0].length, 1);  // 1 mesure
 		test.equal(rows[0][0].chords.length, 1);  // 1 Accord
-		test.equal(rows[0][0].chords[0].chord, "A"); 
+		test.equal(rows[0][0].chords[0].chord, "A");
+		test.equal(rows[0][0].chords[0].duration, 4);  
 		test.ok(rows[0][0].part); 
 		test.equal(rows[0][0].part, "C"); 
 		test.done();
@@ -163,7 +164,7 @@ exports.jison = {
         test.expect(10);
         var rows = grid.parse("A\nB");
         test.ok(rows);
-		test.equal(rows.length, 2);     // 1 ligne
+		test.equal(rows.length, 2);     // 2 ligne
 		test.equal(rows[0].length, 1);  // 1 mesure
 		test.equal(rows[0][0].chords.length, 1);  // 1 Accord
 		test.equal(rows[0][0].chords[0].chord, "A"); 
@@ -173,6 +174,13 @@ exports.jison = {
 		test.equal(rows[1][0].chords.length, 1);  // 1 Accord
 		test.equal(rows[1][0].chords[0].chord, "B"); 
 		test.equal(rows[1][0].chords[0].duration, 4); 
+		test.done();
+  },
+   severalNewLine : function (test) {
+        test.expect(2);
+        var rows = grid.parse("A\n\nB\nB");
+        test.ok(rows);
+		test.equal(rows.length, 3);     // 3 ligne
 		test.done();
   },
 };
