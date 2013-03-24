@@ -16,6 +16,8 @@
   "readmeFilename": "README.md",
   "devDependencies": {
     "grunt-jison": "git://github.com/rsilve/grunt-jison",
-    "jison": "~0.4.2"
+    "jison": "~0.4.2",
+    "grunt-contrib-nodeunit": "~0.1.2",
+    "grunt-contrib-clean": "~0.4.0"
   }
 }

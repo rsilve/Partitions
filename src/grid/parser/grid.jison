@@ -26,21 +26,22 @@
 
 main
 	: /* empty */
-	| lines { console.log($1) }
+	| lines 						{ return $1 }
 	;
 
 lines
-	: line lines 			{ $2.unshift($1); $$ = $2 } 
-	| line EOF   			{ $$ = [ $1 ] }
+	: line NEWLINE lines 			{ $3.unshift($1); $$ = $3 } 
+	| line EOF   					{ $$ = [ $1 ] }
 	;
 
 line
-	: measures NEWLINE 		
+	: measures  		
 	;
 
 measures	
 	: BAR measures					{ $$ = $2 }
 	| measure_repeat BAR measures 	{ $3.unshift($1); $$ = $3 }
+	| measure_repeat BAR       		{ $$ = [ $1 ] } 
 	| measure_repeat        		{ $$ = [ $1 ] } 
 	;
 
@@ -54,7 +55,7 @@ measure
 	: EMPTY					{ $$ = { empty: true } }
 	| SAME					{ $$ = { same: true } }
 	| PART LEFT_PARAN CHORD RIGHT_PARAN chords { $5.part = $3; $$ = $5 } 
-	| chords				{ console.log($1) }
+	| chords				
 	;
 	
 chords
