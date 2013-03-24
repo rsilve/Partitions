@@ -1,5 +1,6 @@
 /* description: Parses end executes mathematical expressions. */
 
+
 /* lexical grammar */
 %lex
 
@@ -58,6 +59,39 @@ measure
 	| SAME					{ $$ = { same: true } }
 	| PART LEFT_PARAN NOTE RIGHT_PARAN chords { $5.part = $3; $$ = $5 } 
 	| chords				
+		%{
+			var total = 0;
+			$1.chords.forEach(function(c) {
+				total += c.duration
+			});	
+			$1.chords.forEach(function(c) {
+				c.duration = c.duration * 4 / total;
+			});	
+			
+			var count = $1.chords.length;
+			var duration  = $1.chords[0].duration;
+			if (count == 1) {
+            	$1.type = 1;
+        	}
+        	if (count == 2 && duration == 1) {
+            	$1.type = 2;
+        	}
+        	if (count == 2 && duration == 2) {
+            	$1.type = 3;
+        	}
+        	if (count == 2 && duration == 3) {
+            	$1.type = 4;
+        	}
+        	if (count == 3 && duration == 1) {
+            	$1.type = 5;
+        	}
+        	if (count == 3 && duration == 2) {
+            	$1.type = 6;
+        	}
+        	if (count == 4) {
+            	$1.type = 7;
+        	}
+		%}
 	;
 	
 chords

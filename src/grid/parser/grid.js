@@ -33,6 +33,40 @@ case 14: this.$ = { same: true }
 break;
 case 15: $$[$0].part = $$[$0-2]; this.$ = $$[$0] 
 break;
+case 16:
+			var total = 0;
+			$$[$0].chords.forEach(function(c) {
+				total += c.duration
+			});	
+			$$[$0].chords.forEach(function(c) {
+				c.duration = c.duration * 4 / total;
+			});	
+			
+			var count = $$[$0].chords.length;
+			var duration  = $$[$0].chords[0].duration;
+			if (count == 1) {
+            	$$[$0].type = 1;
+        	}
+        	if (count == 2 && duration == 1) {
+            	$$[$0].type = 2;
+        	}
+        	if (count == 2 && duration == 2) {
+            	$$[$0].type = 3;
+        	}
+        	if (count == 2 && duration == 3) {
+            	$$[$0].type = 4;
+        	}
+        	if (count == 3 && duration == 1) {
+            	$$[$0].type = 5;
+        	}
+        	if (count == 3 && duration == 2) {
+            	$$[$0].type = 6;
+        	}
+        	if (count == 4) {
+            	$$[$0].type = 7;
+        	}
+		
+break;
 case 17: $$[$0].chords.unshift( $$[$0-1] ); this.$ = $$[$0] 
 break;
 case 18: this.$ = { chords : [ $$[$0] ] } 
