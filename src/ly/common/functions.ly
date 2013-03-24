@@ -1,3 +1,6 @@
+stemOn =  { \revert Staff.Stem #'transparent }
+stemOff = { \override Staff.Stem #'transparent = ##t }
+
 baseTab = #(define-music-function
     			 (parser location arg1 chords)
      			 (ly:music? ly:music?)
