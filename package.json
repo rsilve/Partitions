@@ -13,5 +13,9 @@
   "author": "Robert Silve <robert@silve.net>",
   "license": "apache",
   "gitHead": "31bfcbc0e6023a9675acaea327b73aa1da758c78",
-  "readmeFilename": "README.md"
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "grunt-jison": "git://github.com/rsilve/grunt-jison",
+    "jison": "~0.4.2"
+  }
 }
