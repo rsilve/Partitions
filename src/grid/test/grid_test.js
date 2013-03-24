@@ -111,9 +111,33 @@ exports.jison = {
 		test.ok(rows[0][0].repeatRight); 
 		test.done();
   },
+  part : function (test) {
+        test.expect(8);
+        var rows = grid.parse("@(C) A");
+        
+		test.ok(rows);
+		test.equal(rows.length, 1);     // 1 ligne
+		test.equal(rows[0].length, 1);  // 1 mesure
+		test.equal(rows[0][0].chords.length, 1);  // 1 Accord
+		test.equal(rows[0][0].chords[0].chord, "A"); 
+		test.equal(rows[0][0].chords[0].duration, 1); 
+		test.ok(rows[0][0].part); 
+		test.equal(rows[0][0].part, "C"); 
+		test.done();
+  },
   allChordNames : function (test) {
         test.expect(14);
         ["A", "B", "C", "D", "E", "F", "G"].forEach ( function(c) {
+        	var rows = grid.parse(c);
+			test.ok(rows);
+			test.equal(rows[0][0].chords[0].chord, c);
+		}); 
+		test.done();
+  },
+  allChordForm : function (test) {
+        test.expect(30);
+        ["A", "A#", "Ab", "Am", "A-sus2", "A-sus4", "Aadd9", "Am6",  
+        "Am75b", "A-", "A+", "A75+", "Aø", "A°", "Am/G"].forEach ( function(c) {
         	var rows = grid.parse(c);
 			test.ok(rows);
 			test.equal(rows[0][0].chords[0].chord, c);

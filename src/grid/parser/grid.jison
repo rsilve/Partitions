@@ -9,7 +9,9 @@
 ":"						return 'REPEAT'
 "_"						return 'PLACEHOLDER'
 "|"						return 'BAR'
-[ABCDEFG][\w\d\+\-\#°ø]*	return 'CHORD';
+[ABCDEFG]				return 'NOTE';
+[\w\d\+\-\#°ø]+			return 'MODIFIER';
+"/"						return 'BASE';
 "X"						return 'EMPTY';
 "%"						return 'SAME';
 "@"						return 'PART';
@@ -54,7 +56,7 @@ measure_repeat
 measure
 	: EMPTY					{ $$ = { empty: true } }
 	| SAME					{ $$ = { same: true } }
-	| PART LEFT_PARAN CHORD RIGHT_PARAN chords { $5.part = $3; $$ = $5 } 
+	| PART LEFT_PARAN NOTE RIGHT_PARAN chords { $5.part = $3; $$ = $5 } 
 	| chords				
 	;
 	
@@ -65,7 +67,13 @@ chords
 
 chord
 	: chord PLACEHOLDER		{ $1.duration ++; $$ = $1 }
-	| CHORD					{ $$ = { chord : $1, duration: 1} }
+	| chordname				{ $$ = { chord : $1, duration: 1} }
+	;
+	
+chordname
+	: NOTE MODIFIER BASE NOTE 	{ $$ = $1 + $2 + $3 + $4 }
+	| NOTE MODIFIER			{ $$ = $1 + $2 }
+	| NOTE 					{ $$ = $1 }
 	;
 
 
