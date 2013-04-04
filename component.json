@@ -1,0 +1,8 @@
+{
+  "name": "Partitions_Site",
+  "version": "0.0.0",
+  "dependencies": {
+    "jquery.chords": "git://github.com/rsilve/jquery.chords.git",
+    "bootstrap.bower": "git://github.com/rsilve/bootstrap.bower.git"
+  }
+}
