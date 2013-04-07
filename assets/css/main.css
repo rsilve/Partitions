@@ -1,0 +1,39 @@
+h1 {
+  font-family: Syncopate;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+.post h2,
+.post h3 {
+  font-size: 1.4em;
+  line-height: 20px;
+}
+.post h2 {
+  font-weight: bold;
+  float: left;
+  margin-right: 1ex;
+}
+.post h2:before,
+.post h2:after {
+  content: '"';
+}
+.post h3 {
+  font-weight: normal;
+}
+.post h3:before {
+  content: "  de ";
+}
+.post .chords {
+  display: block;
+}
+.post .chords + .chords {
+  margin-top: 7px;
+}
+.post .diagram {
+  margin-top: 7px;
+}
+.license {
+  margin-top: 14px;
+}

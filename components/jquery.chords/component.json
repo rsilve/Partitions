@@ -16,14 +16,15 @@
     "test/**",
     "*.html",
     "main.js",
-    "Gruntfile.js"
+    "Gruntfile.js",
+    "README*"
   ],
-  "gitHead": "8ac06247bda771c0bdd70a141e344637bb15c881",
+  "gitHead": "a46c9f6122e0fff037b98928dec4ff33047795f8",
   "readme": "ERROR: No README.md file found!",
   "readmeFilename": "README",
-  "_id": "jquer.chords@1.0.0",
+  "_id": "jquer.chords@1.0.1",
   "description": "ERROR: No README.md file found!",
-  "commit": "8ac06247bda771c0bdd70a141e344637bb15c881",
+  "commit": "a46c9f6122e0fff037b98928dec4ff33047795f8",
   "repository": {
     "type": "git",
     "url": "git://github.com/rsilve/jquery.chords.git"

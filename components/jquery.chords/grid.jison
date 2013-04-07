@@ -36,8 +36,8 @@ main
 
 lines
 	: line NEWLINE lines 			{ $3.unshift($1); $$ = $3 } 
-	| line NEWLINE EOF   		    { $$ = [ $1 ] }
-	| line EOF   					{ $$ = [ $1 ] }
+	| line NEWLINE EOF   		    { $$ = [$1] }
+	| line EOF   					{ $$ = [$1] }
 	;
 
 line
@@ -47,8 +47,8 @@ line
 measures	
 	: BAR measures					{ $$ = $2 }
 	| measure_repeat BAR measures 	{ $3.unshift($1); $$ = $3 }
-	| measure_repeat BAR       		{ $$ = [ $1 ] } 
-	| measure_repeat        		{ $$ = [ $1 ] } 
+	| measure_repeat BAR       		{ $$ = [$1] } 
+	| measure_repeat        		{ $$ = [$1] } 
 	;
 
 measure_repeat
@@ -104,7 +104,7 @@ measure
 	
 chords
 	: chord chords			{ $2.chords.unshift( $1 ); $$ = $2 }
-	| chord					{ $$ = { chords : [ $1 ] } }
+	| chord					{ $$ = { chords : [$1] } }
 	;
 
 chord
@@ -116,6 +116,8 @@ chordname
 	: NOTE MODIFIER BASE NOTE MODIFIER	{ $$ = $1 + $2 + $3 + $4 + $5 }
 	| NOTE MODIFIER BASE NOTE 	{ $$ = $1 + $2 + $3 + $4 }
 	| NOTE MODIFIER				{ $$ = $1 + $2 }
+	| NOTE BASE NOTE MODIFIER   { $$ = $1 + $2 + $3 + $4 }
+	| NOTE BASE NOTE		    { $$ = $1 + $2 + $3 }
 	| NOTE 						{ $$ = $1 }
 	;
 

@@ -3,16 +3,16 @@
 <html lang="fr">
     <head>
         <title>{{ page.title }}</title>
-        <link href="/components/bootstrap.bower/css/bootstrap.min.css" rel="stylesheet" media="screen" >
+        <link href="/components/bootstrap.bower/css/bootstrap.min.css" rel="stylesheet" media="screen" type='text/css'>
+        <link href="/assets/css/main.css" rel="stylesheet" media="screen" type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Syncopate' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Rosario:400,400italic' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <div class="container">
+    	<div class="container">
+    		{% include header.html %}
             {{ content }}        
         </div>
         
-        <script src="/components/jquery/jquery.min.js" type="text/javascript"></script>
-        <script src="/components/bootstrap.bower/js/bootstrap.min.js"  type="text/javascript"></script>
+        <script data-main="main" src="components/requirejs/require.js"></script>
     </body>
 </html>

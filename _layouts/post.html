@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    <head>
+        <title>{{ page.title }}</title>
+        <link href='http://fonts.googleapis.com/css?family=Syncopate' rel='stylesheet' type='text/css'>
+        <link href="/components/bootstrap.bower/css/bootstrap.min.css" rel="stylesheet" media="screen" type='text/css'>
+        <link href="/assets/css/main.css" rel="stylesheet" media="screen" type='text/css'>
+    </head>
+    <body>
+        <div class="container">
+        	{% include header.html %}
+            <div class="row post">
+            	<div class="span12">
+            		<h2>{{ page.title }}</h2>
+					<h3>{{ page.author }}</h3>
+				
+            		{{ content }}
+            	</div>
+            </div>
+            <div class="row">
+            	<div class="span12">
+            		{% include license.html %}
+            	</div>
+            </div>        
+        </div>
+        
+        <script data-main="/main" src="/components/requirejs/require.js"></script>
+    </body>
+</html>
