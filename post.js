@@ -1,6 +1,6 @@
 requirejs.config({
     //By default load any module IDs from js/lib
-    baseUrl: '.',
+    baseUrl: '../../../',
     paths: {
         grid: 'components/jquery.chords/grid',
         jquery: 'components/jquery/jquery',
