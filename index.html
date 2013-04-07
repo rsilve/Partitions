@@ -3,7 +3,29 @@ layout: default
 title: Guitare et Accords
 ---
 
-
+<div class="row">
+	<div class="span6 text-center">
+		<a href="#posts" class="btn btn-large">La listes des morceaux</a>
+	</div>
+	<div class="span6 text-center">
+		<a href="#editor" class="btn btn-large">Editer votre grille</a>
+	</div>
+</div>
+<div class="row">
+	<div class="span12">
+		<hr/>
+	</div>
+</div>
+<div class="row">
+	<div class="span12">
+		<a id="posts"></a><h2>Listes des morceaux</h2>
+	</div>
+</div>
+<div class="row">
+	<div class="span12">
+		<hr/>
+	</div>
+</div>
 <div class="row">
     <div class="span12" ng-controller="ListController">
     	<form class="form-search">
@@ -21,4 +43,22 @@ title: Guitare et Accords
       <a href=".{{ post.url }}">{{ post.title }}</a>
     {% endfor %}
 	</div>
+</div>
+<div class="row">
+	<div class="span12">
+		<a id="posts"></a><h2>Editer votre grilles</h2>
+	</div>
+</div>
+<div class="row">
+	<div class="span12">
+		<hr/>
+	</div>
+</div>
+<div class="row">
+    <a id="editor"></a><div class="span12" ng-controller="EditorController">
+    <form>
+    	<textarea ng-model="chords" ng-change="render()" chords-render="#editorView"></textarea>
+    </form>
+    <canvas id="editorView"></canvas>
+    </div>
 </div>

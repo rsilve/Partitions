@@ -10,11 +10,12 @@ requirejs.config({
         angular: 'components/angular/angular.min',
         app: 'assets/js/app',
         ListController: 'assets/js/ListController',
+        EditorController: 'assets/js/EditorController',
     }
 });
 
 
-requirejs(["angular", "app", "ListController", "chords", "diagram" ], function() {
+requirejs(["angular", "app", "ListController", "EditorController", "chords", "diagram" ], function() {
 	
 	angular.element(document).ready(function () {
     	angular.bootstrap(document, ['myApp']);
