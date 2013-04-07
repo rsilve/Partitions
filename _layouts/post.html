@@ -12,10 +12,10 @@
         	{% include header.html %}
             <div class="row post">
             	<div class="span12">
-            		<h2>{{ page.title }}</h2>
-					<h3>{{ page.author }}</h3>
+            		<h2>{{ page.title | xml_escape }}</h2>
+					<h3>{{ page.author | xml_escape }}</h3>
 				
-            		{{ content }}
+            		{{ content  }}
             	</div>
             </div>
             <div class="row">
