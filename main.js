@@ -15,13 +15,12 @@ requirejs.config({
 });
 
 
-requirejs(["angular", "app", "ListController", "EditorController", "chords", "diagram" ], function() {
+requirejs(["jquery", "angular", "app", "ListController", "EditorController", "chords", "diagram" ], function() {
 	
-	angular.element(document).ready(function () {
-    	angular.bootstrap(document, ['myApp']);
-  	});
 	$(document).ready(function() {
         $(".chords").chords();
         $(".diagram").diagram();
+    	angular.bootstrap(document, ['myApp']);
+    	console.log('OK');
      });    
 });
