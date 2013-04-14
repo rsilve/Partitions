@@ -1,6 +1,6 @@
 requirejs.config({
     //By default load any module IDs from js/lib
-    baseUrl: '.',
+    baseUrl: '../',
     shim : {
     	bootstrap : { deps : ["jquery"]}
     },
@@ -19,7 +19,7 @@ requirejs.config({
 
 
 
-requirejs(["jquery", "bootstrap", "angular", "app", "ListController", "EditorController", "chords", "diagram" ], function() {
+requirejs(["jquery", "bootstrap", "angular", "app", "EditorController", "chords", "diagram" ], function() {
 	angular.bootstrap(document, ['myApp']);	
 	$(document).ready(function() {
         $(".chords").chords();

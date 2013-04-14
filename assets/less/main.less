@@ -2,7 +2,13 @@
 h1 {
 	font-family: Syncopate;
 }
-
+h2 a { text-decoration : none; color :inherit; }
+h2 {
+	font-family: Syncopate;
+	font-size: 1.2em;
+	line-height: 1.2em;
+	-webkit-margin-after: 0;
+}	
 body {
 	font-family: 	"Helvetica Neue",Helvetica,Arial,sans-serif ;
 	font-size:		14px;
@@ -66,12 +72,7 @@ body {
 	margin-top: 14px;
 }
 	
-.tab-pane h2 {
-	font-family: Syncopate;
-	font-size: 1.2em;
-	line-height: 1.2em;
-	-webkit-margin-after: 0;
-}	
+
 
 .editor {
 	padding: 6px;
@@ -93,7 +94,12 @@ body {
 
 
 @media print {
-	.header { display: none;}
+	.no-print { display: none;}
  	body { padding-top:	 0px; }
+	.editor {
+		border : 0px solid transparent;
+		padding: 0;
+		background-color: transparent;
+	}
 }
 

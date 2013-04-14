@@ -3,21 +3,11 @@ layout: default
 title: Guitare et Accords
 ---
 
-<div class="tab-content">
-    <div class="tab-pane fade in active" id="nav">
-		<div class="row home">
-			<div class="span6 text-center ">
-				<a data-target="#posts" class="btn btn-large" data-toggle="tab">La liste des morceaux</a>
-			</div>
-			<div class="span6 text-center">
-				<a data-target="#editor" class="btn btn-large" data-toggle="tab">Editer votre grille</a>
-			</div>
-		</div>
-	</div>	
-	<div class="tab-pane fade" id="posts">
-		{% include tracks.html %}
+<div class="row home">
+	<div class="span6 text-center ">
+		<a href="tracks/" class="btn btn-large">La liste des morceaux</a>
 	</div>
-	<div class="tab-pane fade " id="editor">
-		{% include editor.html %}
+	<div class="span6 text-center">
+		<a href="editor/" class="btn btn-large">Editer votre grille</a>
 	</div>
 </div>
