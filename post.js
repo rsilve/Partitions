@@ -14,11 +14,7 @@ requirejs.config({
 });
 
 
-requirejs(["angular", "app", "ListController", "chords", "diagram" ], function() {
-	
-	angular.element(document).ready(function () {
-    	angular.bootstrap(document, ['myApp']);
-  	});
+requirejs(["chords", "diagram" ], function() {
 	$(document).ready(function() {
         $(".chords").chords();
         $(".diagram").diagram();
