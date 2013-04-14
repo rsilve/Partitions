@@ -3,62 +3,21 @@ layout: default
 title: Guitare et Accords
 ---
 
-<div class="row">
-	<div class="span6 text-center">
-		<a href="#posts" class="btn btn-large">La listes des morceaux</a>
+<div class="tab-content">
+    <div class="tab-pane fade in active" id="nav">
+		<div class="row home">
+			<div class="span6 text-center ">
+				<a data-target="#posts" class="btn btn-large" data-toggle="tab">La liste des morceaux</a>
+			</div>
+			<div class="span6 text-center">
+				<a data-target="#editor" class="btn btn-large" data-toggle="tab">Editer votre grille</a>
+			</div>
+		</div>
+	</div>	
+	<div class="tab-pane fade" id="posts">
+		{% include tracks.html %}
 	</div>
-	<div class="span6 text-center">
-		<a href="#editor" class="btn btn-large">Editer votre grille</a>
+	<div class="tab-pane fade " id="editor">
+		{% include editor.html %}
 	</div>
-</div>
-<div class="row">
-	<div class="span12">
-		<hr/>
-	</div>
-</div>
-<div class="row">
-	<div class="span12">
-		<a id="posts"></a><h2>Listes des morceaux</h2>
-	</div>
-</div>
-<div class="row">
-	<div class="span12">
-		<hr/>
-	</div>
-</div>
-<div class="row">
-    <div class="span12" ng-controller="ListController">
-    	<form class="form-search">
-    		<div class="input-append">
-    			<input type="text" ng-model="query" class="span2 search-query">
-    			<button type="submit" class="btn">Search</button>
-  			</div>
-    	</form>
-    	<ul class="nav nav-stacked nav-pills" ng-cloak >
-    		<li ng-repeat="p in posts | filter:query | orderBy:'title'"><a ng-href=".((p.url))"><strong>((p.title))</strong> de ((p.author))</a></li>
-    	</ul>    
-    </div>
-	<div class="hide">
-	{% for post in site.posts %}
-      <a href=".{{ post.url }}">{{ post.title }}</a>
-    {% endfor %}
-	</div>
-</div>
-<div class="row">
-	<div class="span12">
-		<a id="posts"></a><h2>Editer votre grilles</h2>
-	</div>
-</div>
-<div class="row">
-	<div class="span12">
-		<hr/>
-	</div>
-</div>
-<div class="row">
-    <a id="editor"></a><div class="span12" ng-controller="EditorController">
-    <form>
-    	<textarea ng-model="chords" ng-change="render()" chords-render="#editorView"></textarea>
-    </form>
-    <canvas id="editorView"></canvas>
-    </div>
 </div>

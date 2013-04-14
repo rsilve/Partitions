@@ -6,7 +6,7 @@ requirejs.config({
         jquery: 'components/jquery/jquery',
         chords: 'components/jquery.chords/jquery.chords',
         diagram: 'components/jquery.chords/jquery.diagram',
-        boostrap: 'components/bootstrap.bower/bootstrap.min',
+        bootstrap: 'components/bootstrap.bower/js/bootstrap',
         angular: 'components/angular/angular.min',
         app: 'assets/js/app',
         ListController: 'assets/js/ListController',
@@ -15,12 +15,12 @@ requirejs.config({
 });
 
 
-requirejs(["jquery", "angular", "app", "ListController", "EditorController", "chords", "diagram" ], function() {
-	
+
+requirejs(["jquery", "bootstrap", "angular", "app", "ListController", "EditorController", "chords", "diagram" ], function() {
+	angular.bootstrap(document, ['myApp']);	
 	$(document).ready(function() {
         $(".chords").chords();
         $(".diagram").diagram();
-    	angular.bootstrap(document, ['myApp']);
-    	console.log('OK');
+    	
      });    
 });

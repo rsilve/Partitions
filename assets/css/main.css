@@ -7,9 +7,22 @@ body {
   padding-top: 110px;
 }
 .header {
+  padding: 26px 0;
   top: 0;
   background-color: white;
   z-index: 999;
+}
+.home {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.home .btn {
+  font-family: Syncopate;
+  line-height: 38px;
+  font-size: 30px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  width: 320px;
 }
 .post h2,
 .post h3 {
@@ -42,4 +55,25 @@ body {
 }
 .license {
   margin-top: 14px;
+}
+.tab-pane h2 {
+  font-family: Syncopate;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  -webkit-margin-after: 0;
+}
+.editor {
+  padding: 6px;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 196px;
+  background-color: #f2f2f2;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: inset -1px -1px 2px 0px #ffffff;
+  -webkit-box-shadow: inset -1px -1px px 2px 0px #ffffff;
+  -o-box-shadow: inset -1px -1px 2px 0px #ffffff;
+  box-shadow: inset -1px -1px 2px 0px #ffffff;
+  border: 1px solid #ededed;
 }

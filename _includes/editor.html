@@ -1,0 +1,20 @@
+<div class="row">
+	<div class="span12">
+		<h2><span data-target="#nav" data-toggle="tab" class="pull-right"><i class="icon-circle-arrow-up"></i></span>
+		Editer votre grille</h2>
+	</div>
+</div>
+<div class="row">
+	<div class="span12">
+		<hr/>
+	</div>
+</div>
+<div class="row">
+	<div class="span12" ng-controller="EditorController">
+		<form>
+			<textarea class="span6" rows="5" ng-model="chords" ng-change="render()" chords-render="#editorView"></textarea>
+		</form>
+		<div class="editor"><canvas id="editorView"></canvas></div>
+		
+	</div>
+</div>
