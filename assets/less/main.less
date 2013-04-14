@@ -1,3 +1,4 @@
+
 h1 {
 	font-family: Syncopate;
 }
@@ -9,11 +10,13 @@ body {
 }
 
 .header {
+	h1 a { text-decoration : none; color :inherit; }
 	padding:  26px 0;
 	top : 0;
 	background-color: white;
 	z-index: 999;
 }
+
 
 .home {
 	padding-top: 	1*80px;
@@ -33,11 +36,11 @@ body {
 .post {
 	h2, h3 {
 		font-size:	 1.4em;
-		line-height: 20px;		
+		line-height: 20px;
+		display: inline-block;		
 	}
 	h2 {
 		font-weight: bold;
-		float: left;
 		margin-right: 1ex;
 		//margin: 0;
 		&:before , &:after { content : '"' }
@@ -85,3 +88,12 @@ body {
 	box-shadow: inset -1px -1px 2px 0px white;
 	border: 1px solid darken(white, 7%);
 }
+
+
+
+
+@media print {
+	.header { display: none;}
+ 	body { padding-top:	 0px; }
+}
+
