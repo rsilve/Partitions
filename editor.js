@@ -21,7 +21,7 @@ requirejs.config({
 
 
 
-requirejs(["jquery", q "angular", "app", "EditorController", "chords", "diagram" ], function() {
+requirejs(["jquery", "angular", "app", "EditorController", "chords", "diagram" ], function() {
 	angular.bootstrap(document, ['myApp']);	
 	$(document).ready(function() {
         $(".chords").chords();
