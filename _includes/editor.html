@@ -10,15 +10,15 @@
 	</div>
 </div>
 <div class="row">
-	<div class="span12" ng-controller="EditorController"  ng-cloack>
+	<div class="span12" ng-controller="EditorController" >
 		<form class="no-print">
 			<input type="text" ng-model="title" class="span4" placeholder="Titre"/><br>
 			<input type="text" ng-model="author" class="span4" placeholder="Auteur(s)"/><br>
 			<textarea placeholder="Am | G | C | Em ..." class="span6" rows="5" ng-model="chords" ng-change="render()" chords-render="#editorView"></textarea>
 		</form>
 		<div class="editor post">
-		<div ng-show="title || author"><h2 ng-show="title">((title))</h2>
-		<h3 ng-show="author">((author))</h3></div>
+		<div ng-show="title || author"><h2 ng-show="title"  ng-cloack>((title))</h2>
+		<h3 ng-show="author"  ng-cloack>((author))</h3></div>
 		<canvas id="editorView"></canvas>
 		</div>
 	</div>
