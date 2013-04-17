@@ -20,15 +20,15 @@ theme = \relative  { \time 4/4
 				<<e2\4 g2\3 b2\2>> <<ees,4\4 a4\3 b4\2>> r8 e,16\4 g\3
 			}
 bass = \relative { \time 4/4 
-				\partial8 r8
-				e,,4\6 e b'4\5 b\5 
-				e,4\6 e\6 b'\5 b\5
-				e,4\6 e a4\5 a\5 
-				e4\6 e\6 b'\5 b\5
-				e,4\6 e b'4\5 b\5 
-				e,4\6 e4\6 e4\6 e4\6
-				c'4\5 c\5 b4\5 b\5 
-				e,4\6 e4\6 b'4\5 b4\5
+				\partial 8 r8
+				e,,4\6 g b4\5 fis\6 
+				e4\6 g\6 b\5 fis\6
+				e4\6 g a4\5 c\5 
+				e,4\6 g\6 b\5 fis\6
+				e4\6 g b4\5 fis\6 
+				e4\6 g4\6 e4\6 g4\6
+				c4\5 g\6 b4\5 fis\6 
+				e4\6 g4\6 b4\5 fis4\6r
 			}
 
 
