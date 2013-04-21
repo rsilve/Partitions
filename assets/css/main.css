@@ -70,6 +70,10 @@ body {
 .license {
   margin-top: 14px;
 }
+#message {
+  white-space: pre;
+  font-family: monospace;
+}
 .editor {
   padding: 6px;
   box-sizing: border-box;
