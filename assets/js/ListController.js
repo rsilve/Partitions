@@ -12,6 +12,7 @@ define(['app'], function(app) {
 		]
 	}
 
-  return app.controller('ListController', ctrl);
+  app.controller('ListController', ctrl);
+  return {color: "black"}
 });
 
