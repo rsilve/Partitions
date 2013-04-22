@@ -14,11 +14,12 @@ requirejs.config({
         app: 'assets/js/app',
         ListController: 'assets/js/ListController',
         EditorController: 'assets/js/EditorController',
+        ListService: 'assets/js/ListService',
     }
 });
 
 
 
-requirejs(["jquery", "bootstrap", "angular", "app", "ListController" ], function() {
+requirejs(["jquery", "bootstrap", "angular", "app", "ListController", "ListService" ], function() {
 	angular.bootstrap(document, ['myApp']);	
 });

@@ -1,18 +1,10 @@
----
----
 "use strict";
-define(['app'], function(app) {
+define(['app', 'ListService'], function(app) {
 	
-	var ctrl = function($scope) {
-		
-		$scope.posts = [
-			{% for post in site.posts %}
-    		{title : "{{ post.title }}", url: "{{ post.url }}", author : "{{ post.author }}" },
-			{% endfor %}
-		]
-	}
-
+  var ctrl = function($scope, $trackList) {
+  	$scope.posts = $trackList
+  }
   app.controller('ListController', ctrl);
-  return {color: "black"}
+  return {}
 });
 
