@@ -193,6 +193,28 @@
 }
 
 
+\score {
+
+\baseTab 
+	\relative {
+		\time 4/4 
+		\bar "|:" 
+		ees,8\5 e8\5 gis\4 a\4 
+		b\3 c\3 d\3 dis\2 
+		e\2 e\2 f\2 e\2 d\3 b\3
+		gis\4 f\4 f1\6~f1\6
+
+		
+		 \bar ":|" 
+	}
+	\chordmode {
+		e1:7 a:m f gis:dim 
+	}
+
+
+}
+
+
 
 
 
