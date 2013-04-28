@@ -9,11 +9,11 @@
 
 theme = \relative  { \time 4/4 
 				\partial 8 e,16\4 g\3
-				b2\2 b8\2 a\3 b\2 a\3 
-				r2 r4 r8 e16\4 g\3
-				b2\2 e4\1 c\2 
-				b2\2 r4 r8 e,16\4 g\3
-				b2\2 b8\2 a\3 b\2 a\3 
+				b4.\2 b16\2 b16\2 a8\3 a\3 b\2 a\3 
+				e2\4 r4 r8 e16\4 g\3
+				b4.\2 e8\1 e4\1 c8\2 
+				b8\2~b2\2 r4 r8 e,16\4 g\3
+				b4.\2 b16\2 b16\2 a8\3 a\3 b\2 a\3 
 				r1
 				e8\4 bes'\3 b\2 bes\3
 				ees,8\4 a\3 b\2 a\3
