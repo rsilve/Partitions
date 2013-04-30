@@ -128,6 +128,25 @@
 	}
 }
 
+\score {
+
+\baseTab 
+ 	\relative  {
+		\time 4/4 \bar "|:"
+		g'8\1 f\2 e\2 f\2
+		e\2 d\2 c\3 d\2
+		c\3 b\3 a\3 
+		bis\3 b\3 c\3
+		d\2 eis\2 e1\2~e1\2
+
+		\bar ":|" 
+	}
+	\chordmode {
+		\set majorSevenSymbol = \markup { 7M } \time 4/4
+     	d1:m9 g:7.5+ c:maj7 c:maj7 
+	}
+}
+
 
 \score {
 
