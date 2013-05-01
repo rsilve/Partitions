@@ -22,6 +22,10 @@ define(['angular', 'grid', 'chords'], function () {
 				}
       		});
 		}
-	});
+	}).directive("printPage", function() {
+		return function($scope, element, attrs) {
+			$(element).click(function() { window.print() });
+		}
+	});;
   return app;
 });
