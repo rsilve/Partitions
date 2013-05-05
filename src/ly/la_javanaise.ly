@@ -24,8 +24,17 @@ theme = \relative  {
 	e8 g c g e4
 	c4 <g' b e>8 <g b e>8 <g b e>8 <g b e>8
 	c,4 <bes' d g>8 <bes d g>8 <bes d g>8 <g b e>8
-	f4\5 <c'\4 e\3 g\2>2
-	f,4\5 <a\4 c\3 f\2>2
+	\set minimumFret = 8
+	f4 <c' e g>2
+	f,4 <a\4 c\3 f\2>2
+	\set minimumFret = 5
+	<e gis c e>8 gis c e fis \glissando gis
+	\set minimumFret = 7	
+	<e, b' d gis>4 
+	\set minimumFret = 1
+	e'8\2 d d \glissando c	
+	a,\5 <e' a c> <e a c> <e a c> g,\6 <e' a c> 
+	fis,4\6 <e' a c> <e a b\2> 
 
 }
 
