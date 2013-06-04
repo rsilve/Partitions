@@ -14,17 +14,16 @@ h2 {
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  padding-top: 110px;
+}
+h1 a {
+  text-decoration: none;
+  color: inherit;
 }
 .header {
   padding: 26px 0;
   top: 0;
   background-color: white;
   z-index: 999;
-}
-.header h1 a {
-  text-decoration: none;
-  color: inherit;
 }
 .home {
   padding-top: 80px;
@@ -36,7 +35,6 @@ body {
   font-size: 30px;
   padding-top: 14px;
   padding-bottom: 14px;
-  width: 320px;
 }
 .post h2,
 .post h3 {
@@ -89,6 +87,29 @@ body {
   box-shadow: inset -1px -1px 2px 0px #ffffff;
   border: 1px solid #ededed;
 }
+.ng-cloak {
+  display: none;
+}
+@media (max-width: 640px) {
+  h1 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .header {
+    padding: 4px 0;
+  }
+  .post h2,
+  .post h3 {
+    font-size: 1em;
+    line-height: 1em;
+  }
+  .post .chords + .chords {
+    margin-top: 7px;
+  }
+  .post .diagram {
+    margin-top: 7px;
+  }
+}
 @media print {
   .no-print {
     display: none;
@@ -101,7 +122,4 @@ body {
     padding: 0;
     background-color: transparent;
   }
-}
-.ng-cloak {
-  display: none;
 }
