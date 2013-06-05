@@ -19,7 +19,7 @@ module.exports = function(grunt) {
     	livereload: {
         	options: {
           		port: 9001,
-          		hostname: 'macbook.domain',
+          		hostname: 'localhost',
           		base: './_site/',
           		middleware: function(connect, options) {
             		return [lrSnippet, folderMount(connect, options.base)]
