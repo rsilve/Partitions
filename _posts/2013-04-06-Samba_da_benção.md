@@ -1,4 +1,5 @@
 ---
+category: track
 layout: post
 title: Samba da benção
 author: Baden Powel et Vinicius de Moraes

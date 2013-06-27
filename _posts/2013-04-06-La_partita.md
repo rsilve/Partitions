@@ -1,4 +1,5 @@
 ---
+category: track
 layout: post
 title: La partita
 author: anonyme

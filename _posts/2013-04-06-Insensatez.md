@@ -1,4 +1,5 @@
 ---
+category: track
 layout: post
 title: Insensatez
 author: Antônio Carlos Jobim

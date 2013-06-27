@@ -1,7 +1,9 @@
 ---
+category: track
 layout: post
 title: Le métèque
 author: Georges Moustaki
+category: track
 ---
 
 

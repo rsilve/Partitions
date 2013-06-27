@@ -46,8 +46,8 @@ h1 a {
   font-weight: bold;
   margin-right: 1ex;
 }
-.post h2:before,
-.post h2:after {
+.post h2.title:before,
+.post h2.title:after {
   content: '"';
 }
 .post h3 {

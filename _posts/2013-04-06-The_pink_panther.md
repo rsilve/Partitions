@@ -1,4 +1,5 @@
 ---
+category: track
 layout: post
 title: The pink panther
 author: Henri Mancini

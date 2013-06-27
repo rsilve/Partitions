@@ -1,4 +1,5 @@
 ---
+category: track
 layout: post
 title: While my guitar gently weeps
 author: George Harrison

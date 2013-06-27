@@ -1,4 +1,5 @@
 ---
+category: track
 layout: post
 title: Nine by nine
 author: John Dummer Band

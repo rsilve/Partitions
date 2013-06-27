@@ -1,4 +1,5 @@
 ---
+category: track
 layout: post
 title: Les copains d'abord
 author: Georges Brassens

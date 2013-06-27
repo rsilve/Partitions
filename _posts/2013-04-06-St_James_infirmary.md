@@ -1,4 +1,5 @@
 ---
+category: track
 layout: post
 title: St James infirmary
 author: anonyme

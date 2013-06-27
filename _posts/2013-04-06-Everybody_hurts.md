@@ -1,4 +1,5 @@
 ---
+category: track
 layout: post
 title: Everybody hurts
 author: R.E.M

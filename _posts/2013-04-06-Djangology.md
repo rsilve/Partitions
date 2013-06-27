@@ -1,4 +1,5 @@
 ---
+category: track
 layout: post
 title: Djangology
 author: Django Reinhardt

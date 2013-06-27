@@ -1,6 +1,6 @@
 requirejs.config({
     //By default load any module IDs from js/lib
-    baseUrl: '../../../',
+    baseUrl: '../../../../',
 	shim : {
     	chords : { deps : ["grid", "jquery"]},
     	diagram : { deps : ["jquery"]}

@@ -1,4 +1,5 @@
 ---
+category: track
 layout: post
 title: Je suis snob
 author: Boris Vian

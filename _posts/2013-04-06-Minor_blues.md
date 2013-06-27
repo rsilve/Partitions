@@ -1,4 +1,5 @@
 ---
+category: track
 layout: post
 title: Minor blues
 author: Django Reinhardt, Stephane Grappelli 

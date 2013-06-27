@@ -26,6 +26,20 @@ define(['angular', 'grid', 'chords'], function () {
 		return function($scope, element, attrs) {
 			$(element).click(function() { window.print() });
 		}
-	});;
+	}).directive('chords', function factory(injectables) {
+	  var directiveDefinitionObject = {
+		restrict: 'C',
+		scope: false,
+		controller: function($scope, $element, $attrs, $transclude, otherInjectables) {  },
+		compile: function compile(tElement, tAttrs, transclude) {
+		  return {
+			pre: function preLink(scope, iElement, iAttrs, controller) { },
+			post: function postLink(scope, iElement, iAttrs, controller) {  }
+		  }
+		},
+		link: function postLink(scope, iElement, iAttrs) {  }
+	  };
+	  return directiveDefinitionObject;
+});
   return app;
 });

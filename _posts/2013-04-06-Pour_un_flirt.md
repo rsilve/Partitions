@@ -1,4 +1,5 @@
 ---
+category: track
 layout: post
 title: Pour un flirt
 author: Michel Delpech

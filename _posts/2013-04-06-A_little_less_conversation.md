@@ -1,4 +1,7 @@
 ---
+category: track
+category: track
+category: track
 layout: post
 title: A little less conversation
 author:  Mac Davis and Billy Strange and Elvis Presley

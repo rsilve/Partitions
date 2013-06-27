@@ -1,4 +1,5 @@
 ---
+category: track
 layout: post
 title: Just a gigolo
 author: Leonelo Casucci, Irving Caesar

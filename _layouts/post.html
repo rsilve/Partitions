@@ -6,21 +6,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{{ page.title }}</title>
         <link href='http://fonts.googleapis.com/css?family=Syncopate' rel='stylesheet' type='text/css'>
-        <link href="../../../components/bootstrap.bower/css/bootstrap.min.css" rel="stylesheet" media="screen" type='text/css'>
-        <link href="../../../components/bootstrap.bower/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen" type='text/css'>
-        <link rel="stylesheet" href="../../../components/font-awesome/css/font-awesome.min.css">
-        <link href="../../../assets/css/main.css" rel="stylesheet" type='text/css'>
-		<script data-main="../../../post" src="../../../components/requirejs/require.js"></script>
+        <link href="../../../../components/bootstrap.bower/css/bootstrap.min.css" rel="stylesheet" media="screen" type='text/css'>
+        <link href="../../../../components/bootstrap.bower/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen" type='text/css'>
+        <link rel="stylesheet" href="../../../../components/font-awesome/css/font-awesome.min.css">
+        <link href="../../../../assets/css/main.css" rel="stylesheet" type='text/css'>
+		<script data-main="../../../../post" src="../../../../components/requirejs/require.js"></script>
 
     </head>
     <body>
         <div class="container">
-        	<h1 class="visible-phone pull-right"><a href="../../../tracks"><i class="icon-circle-arrow-up"></i></a></h1>
+        	<h1 class="visible-phone pull-right"><a href="../../../../tracks"><i class="icon-circle-arrow-up"></i></a></h1>
         	{% include header.html %}
             <div class="row post">
             	<div class="span12">
-            		<h1 class="visible-desktop pull-right" style="z-index: 10 !important"><a href="../../../tracks"><i class="icon-circle-arrow-up"></i></a></h1>
-            		<h2>{{ page.title | escape }}</h2>
+            		<h2 class="visible-desktop pull-right"><a href="../../../../tracks"><i class="icon-circle-arrow-up"></i></a></h2>
+            		<h2 class="title">{{ page.title | escape }}</h2>
 					<h3>{{ page.author | escape }}</h3>
 				
             		{{ content  }}
@@ -32,6 +32,5 @@
             	</div>
             </div>        
         </div>
-         <a href="https://github.com/rsilve/Partitions" style="z-index: 0 !important" class="no-print visible-desktop"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 0 !important" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>                
     </body>
 </html>
