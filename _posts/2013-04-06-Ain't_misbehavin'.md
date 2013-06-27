@@ -6,11 +6,8 @@ author: Thomas 'Fats' Waller
 ---
 
 <canvas class="chords">Eb7M Cm7|Fm9 Bb13| Eb7M G75+|Ab7M Abm|Eb7M Gb9|Fm9 Bb13|Gm7 C7| F7 Bb13
-
 Eb7M Cm7|Fm9 Bb13| Eb7M G75+|Ab7M Abm|Eb7M Gb9|Fm9 Bb7|Eb7M Ab|Eb7M G75+
-
 Cm7|Ab13|F13|C75+| Bb7M G75+|Cm7 F9|Bb7M C75+|F9 Bb13
-
 Eb7M Cm7|Fm9 Bb13| Eb7M G75+|Ab Abm|Eb7M Gb7|Fm9 Bb13|Gm7 C7|Eb7M</canvas>
 
 <canvas class="chords">Eb7M Cm7|Fm9 Bb13| Eb7M G75+|Ab Abm|Eb7M Gb9|Fm9 Bb13|</canvas>
