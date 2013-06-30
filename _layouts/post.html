@@ -13,11 +13,11 @@
 		<script data-main="../../../../post" src="../../../../components/requirejs/require.js"></script>
 
     </head>
-    <body>
+    <body ng-app="myApp">
         <div class="container">
         	<h1 class="visible-phone pull-right"><a href="../../../../tracks"><i class="icon-circle-arrow-up"></i></a></h1>
         	{% include header.html %}
-            <div class="row post">
+            <div class="row post" ng-controller="TrackController">
             	<div class="span12">
             		<h2 class="visible-desktop pull-right"><a href="../../../../tracks"><i class="icon-circle-arrow-up"></i></a></h2>
             		<h2 class="title">{{ page.title | escape }}</h2>

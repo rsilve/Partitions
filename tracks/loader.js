@@ -20,6 +20,5 @@ requirejs.config({
 
 
 
-requirejs(["jquery", "bootstrap", "angular", "app", "ListController", "ListService" ], function() {
-	angular.bootstrap(document, ['myApp']);	
+requirejs(["app", "ListController", "ListService" ], function() {	
 });

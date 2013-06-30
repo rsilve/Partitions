@@ -14,6 +14,7 @@ requirejs.config({
         bootstrap: 'components/bootstrap.bower/js/bootstrap',
         angular: 'components/angular/angular.min',
         app: 'assets/js/app',
+        EditorDirective: 'assets/js/EditorDirective',
         ListController: 'assets/js/ListController',
         EditorController: 'assets/js/EditorController',
     }
@@ -21,11 +22,4 @@ requirejs.config({
 
 
 
-requirejs(["jquery", "angular", "app", "EditorController", "chords", "diagram" ], function() {
-	angular.bootstrap(document, ['myApp']);	
-	$(document).ready(function() {
-        $(".chords").chords();
-        $(".diagram").diagram();
-    	
-     });    
-});
+requirejs(["app", "EditorDirective", "EditorController", "chords", "diagram" ], function() {});

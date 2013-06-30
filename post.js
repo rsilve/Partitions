@@ -13,14 +13,14 @@ requirejs.config({
         boostrap: 'components/bootstrap.bower/bootstrap.min',
         angular: 'components/angular/angular.min',
         app: 'assets/js/app',
-        ListController: 'assets/js/ListController',
+        TrackController: 'assets/js/TrackController',
     }
 });
 
 
-requirejs(["chords", "diagram" ], function() {
+requirejs(["diagram", "app", "TrackController", ], function() {
 	$(document).ready(function() {
-        $(".chords").chords();
+        //$(".chords").chords();
         $(".diagram").diagram();
      });    
 });
