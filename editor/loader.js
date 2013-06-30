@@ -22,4 +22,4 @@ requirejs.config({
 
 
 
-requirejs(["app", "EditorDirective", "EditorController", "chords", "diagram" ], function() {});
+requirejs(["app", "EditorDirective", "EditorController"], function() {});

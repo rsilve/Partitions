@@ -20,7 +20,6 @@ requirejs.config({
 
 requirejs(["diagram", "app", "TrackController", ], function() {
 	$(document).ready(function() {
-        //$(".chords").chords();
         $(".diagram").diagram();
      });    
 });
