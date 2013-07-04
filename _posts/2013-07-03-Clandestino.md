@@ -14,4 +14,4 @@ F#m | % | % | %
 F#m | % | % | % 
 </canvas>
  
- Une ébauche du theme jusqu'au refrain (https://github.com/rsilve/Partitions/raw/master/pdf/clandestino.pdf)
+ [Une ébauche du theme jusqu'au refrain](https://github.com/rsilve/Partitions/raw/master/pdf/clandestino.pdf)
