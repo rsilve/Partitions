@@ -15,6 +15,7 @@ requirejs.config({
         angular: 'components/angular/angular.min',
         app: 'assets/js/app',
         EditorDirective: 'assets/js/EditorDirective',
+        ChordsDirective: 'assets/js/ChordsDirective',
         ListController: 'assets/js/ListController',
         EditorController: 'assets/js/EditorController',
     }
@@ -22,4 +23,4 @@ requirejs.config({
 
 
 
-requirejs(["app", "EditorDirective", "EditorController"], function() {});
+requirejs(["app", "EditorDirective", "EditorController", "ChordsDirective"], function() {});

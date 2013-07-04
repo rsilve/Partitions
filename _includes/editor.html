@@ -15,14 +15,15 @@
 			<div  class="alert alert-error pull-right hide" id="message"></div>
 			<input type="text" ng-model="title" class="span4" placeholder="Titre"/><br>
 			<input type="text" ng-model="author" class="span4" placeholder="Auteur(s)"/><br>
-			<textarea placeholder="Am | G | C | Em ..." class="span6" rows="5" ng-model="chords" ng-change="render()" chords-render="#editorView" chords-message="#message"></textarea>
+			((chords))
+			<textarea placeholder="Am | G | C | Em ..." class="span6" rows="5" ng-model="chords" zchords-render="#editorView" chords-message="#message"></textarea>
 		</form>
 		<div class="editor post">
 			<div ng-show="title || author">
 				<h2 ng-show="title">((title))</h2>
 				<h3 ng-show="author"  >((author))</h3>
 			</div>
-			<canvas id="editorView"></canvas>
+			<canvas id="editorView" chords ng-model="chords" ></canvas>
 		</div>
 		<div class="no-print">
 		<br>

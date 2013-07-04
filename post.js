@@ -14,11 +14,12 @@ requirejs.config({
         angular: 'components/angular/angular.min',
         app: 'assets/js/app',
         TrackController: 'assets/js/TrackController',
+        ChordsDirective: 'assets/js/ChordsDirective',
     }
 });
 
 
-requirejs(["diagram", "app", "TrackController", ], function() {
+requirejs(["diagram", "app", "TrackController", "ChordsDirective" ], function() {
 	$(document).ready(function() {
         $(".diagram").diagram();
      });    
