@@ -12,18 +12,17 @@
 <div class="row">
 	<div class="span12 ng-cloak" ng-controller="EditorController" >
 		<form class="no-print">
-			<div  class="alert alert-error pull-right hide" id="message"></div>
+			<div  class="alert alert-error pull-right" ng-class="hasError()" >((error))</div>
 			<input type="text" ng-model="title" class="span4" placeholder="Titre"/><br>
 			<input type="text" ng-model="author" class="span4" placeholder="Auteur(s)"/><br>
-			((chords))
-			<textarea placeholder="Am | G | C | Em ..." class="span6" rows="5" ng-model="chords" zchords-render="#editorView" chords-message="#message"></textarea>
+			<textarea placeholder="Am | G | C | Em ..." class="span6" rows="5" ng-model="chords"></textarea>
 		</form>
 		<div class="editor post">
 			<div ng-show="title || author">
 				<h2 ng-show="title">((title))</h2>
-				<h3 ng-show="author"  >((author))</h3>
+				<h3 ng-show="author">((author))</h3>
 			</div>
-			<canvas id="editorView" chords ng-model="chords" ></canvas>
+			<canvas id="editorView" chords chords-error="error" ng-model="chords" ></canvas>
 		</div>
 		<div class="no-print">
 		<br>

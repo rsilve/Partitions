@@ -15,11 +15,11 @@
     </head>
     <body ng-app="myApp">
         <div class="container">
-        	<h1 class="visible-phone pull-right"><a href="../../../../tracks"><i class="icon-circle-arrow-up"></i></a></h1>
+        	<h1 class="visible-phone pull-right no-print"><a href="../../../../tracks"><i class="icon-circle-arrow-up"></i></a></h1>
         	{% include header.html %}
             <div class="row post" ng-controller="TrackController">
             	<div class="span12">
-            		<h2 class="visible-desktop pull-right"><a href="../../../../tracks"><i class="icon-circle-arrow-up"></i></a></h2>
+            		<h2 class="visible-desktop pull-right no-print"><a href="../../../../tracks"><i class="icon-circle-arrow-up"></i></a></h2>
             		<h2 class="title">{{ page.title | escape }}</h2>
 					<h3>{{ page.author | escape }}</h3>
 				

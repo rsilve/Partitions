@@ -6,8 +6,14 @@ define(['app'], function (app) {
 			return;
 		}	
 		//console.log(value)
-		var json = parser.parse(value);
-		$(element).chords({json: json}); 
+		try {
+			var json = parser.parse(value);
+			$(element).chords({json: json});
+		} catch (e) {
+			var m = e.message.split("\n");
+			var s = m[0] + "\n" + m[1].substr(Math.max(0, m[1].length - 5));
+			return s;
+		} 
 	}
 
 	app.directive('chords', function factory() {
@@ -16,13 +22,20 @@ define(['app'], function (app) {
 		require: "?ngModel",
 		//controller: function($scope, $element, $attrs, $transclude) { console.log("ctrl") },
 		link: function postLink(scope, iElement, iAttrs, ngModel) {
+			scope.$on("chords.error",  function(event, err) {
+				if (iAttrs.chordsError) {
+					scope.$evalAsync(function() { scope[iAttrs.chordsError] = err })
+				}
+			})
 			if (ngModel) {
 				ngModel.$render = function() {
-					render(iElement,  ngModel.$viewValue || '')
-        		};
+					var err = render(iElement,  ngModel.$viewValue || '')
+					scope.$emit("chords.error", err)
+				};
 			} else {
 				//console.log("no model");
-				render(iElement, $(iElement).text())
+				var err = render(iElement, $(iElement).text())
+				scope.$emit("chords.error", err)
 			}
 			
 		}

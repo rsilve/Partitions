@@ -11,6 +11,10 @@ define(['app'], function(app) {
 			buff = encodeURIComponent(buff)
 			document.location.href = "mailto:robert@silve.net?subject=[Demande d'ajout]&body="+buff
 		}
+		
+		$scope.hasError = function() {
+			return $scope.error ? '': 'hide';
+		}
 	}
 	
   return app.controller('EditorController', ctrl);
