@@ -6,7 +6,7 @@ category: track
 ---
 
 
-Introduction 
+ 
 <canvas class="chords">
 @(A) G | Em | G | Em | C | D | G | D 
 @(B) G | C D | Em | C  D |  D B7 | B7 | Em | Em
