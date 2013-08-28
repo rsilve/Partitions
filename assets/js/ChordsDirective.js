@@ -20,7 +20,6 @@ define(['app'], function (app) {
 	  var directiveDefinitionObject = {
 		restrict: 'AC',
 		require: "?ngModel",
-		//controller: function($scope, $element, $attrs, $transclude) { console.log("ctrl") },
 		link: function postLink(scope, iElement, iAttrs, ngModel) {
 			scope.$on("chords.error",  function(event, err) {
 				if (iAttrs.chordsError) {
@@ -33,10 +32,11 @@ define(['app'], function (app) {
 					scope.$emit("chords.error", err)
 				};
 			} else {
-				//console.log("no model");
 				var err = render(iElement, $(iElement).text())
 				scope.$emit("chords.error", err)
 			}
+			
+			
 			
 		}
 	  };
