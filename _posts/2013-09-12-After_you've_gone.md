@@ -1,10 +1,11 @@
 ---
 layout: post
 title: After you've gone
-author: Hugh Laurie (trouver le vrai compositeur)
+author: Turner Layton
 category: undefined
 ---
 
+Transcrit à partir de la version interprété par Hugh Laurie dans l'album Let Them Talk
 
 Structure ABCD pont sur CD CD 
 <canvas class="chords">
@@ -18,4 +19,6 @@ C7 | % | F7 | % | Bb
 Cm  | G7 | Cm | Ebm7  | Bb | X | X | X 
 Bb
 </canvas>
+
+http://www.free-scores.com/download-sheet-music.php?pdf=56780
 
