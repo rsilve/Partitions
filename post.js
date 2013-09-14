@@ -6,12 +6,12 @@ requirejs.config({
     	diagram : { deps : ["jquery"]}
     },
     paths: {
-        grid: 'components/jquery.chords/grid',
-        jquery: 'components/jquery/jquery',
-        chords: 'components/jquery.chords/jquery.chords',
-        diagram: 'components/jquery.chords/jquery.diagram',
-        boostrap: 'components/bootstrap.bower/bootstrap.min',
-        angular: 'components/angular/angular.min',
+        grid: 'bower_components/jquery.chords/grid',
+        jquery: 'bower_components/jquery/jquery',
+        chords: 'bower_components/jquery.chords/jquery.chords',
+        diagram: 'bower_components/jquery.chords/jquery.diagram',
+        boostrap: 'bower_components/bootstrap.bower/bootstrap.min',
+        angular: 'bower_components/angular/angular.min',
         app: 'assets/js/app',
         TrackController: 'assets/js/TrackController',
         ChordsDirective: 'assets/js/ChordsDirective',
