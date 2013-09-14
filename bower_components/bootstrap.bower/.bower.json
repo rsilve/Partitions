@@ -1,0 +1,13 @@
+{
+  "name": "bootstrap.bower",
+  "homepage": "https://github.com/rsilve/bootstrap.bower",
+  "_release": "master",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "86b2094a6609299a6d7ba17faa07ea88a8e05c1e"
+  },
+  "_source": "git://github.com/rsilve/bootstrap.bower.git",
+  "_target": "*",
+  "_originalSource": "git://github.com/rsilve/bootstrap.bower.git"
+}
