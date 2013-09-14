@@ -5,7 +5,6 @@ define(['app'], function (app) {
 		if (value === undefined || value === "") {
 			return;
 		}	
-		//console.log(value)
 		try {
 			var json = parser.parse(value);
 			$(element).chords({json: json});
@@ -25,7 +24,7 @@ define(['app'], function (app) {
 				if (iAttrs.chordsError) {
 					scope.$evalAsync(function() { scope[iAttrs.chordsError] = err })
 				}
-			})
+			});
 			if (ngModel) {
 				ngModel.$render = function() {
 					var err = render(iElement,  ngModel.$viewValue || '')
@@ -34,10 +33,7 @@ define(['app'], function (app) {
 			} else {
 				var err = render(iElement, $(iElement).text())
 				scope.$emit("chords.error", err)
-			}
-			
-			
-			
+			}	
 		}
 	  };
 	  return directiveDefinitionObject;
