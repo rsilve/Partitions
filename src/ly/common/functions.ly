@@ -22,3 +22,17 @@ baseTab = #(define-music-function
 >>
 
    				#})
+   				
+simpleTab = #(define-music-function
+    			 (parser location arg1)
+     			 (ly:music?)
+   				#{
+
+<<  
+   \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
+    \new TabStaff { 
+   		$arg1
+   	}
+>>
+
+   				#})
