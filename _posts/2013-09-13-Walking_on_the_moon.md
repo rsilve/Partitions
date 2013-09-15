@@ -15,3 +15,5 @@ F#m | % | % | % | Dbm | % | % | %
 A | E | B | F#m | A | E | B | B
 Dbm | % | % | %
 </canvas>
+
+Transcription [theme](https://github.com/rsilve/Partitions/raw/master/pdf/walking_on_the_moon.pdf)
