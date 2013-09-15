@@ -3,7 +3,8 @@
   "main": [
     "jquery.chords.js",
     "jquery.diagram.js",
-    "grid.js"
+    "grid.js",
+    "transpose.js"
   ],
   "dependencies": {
     "jquery": "~1.9.1"
@@ -23,7 +24,7 @@
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "b9d3642fc8f0d083ec5e509ff941140b68abaf55"
+    "commit": "f2ef1fd3cf6d00d377ffafc480d47761756d6420"
   },
   "_source": "git://github.com/rsilve/jquery.chords.git",
   "_target": "*",

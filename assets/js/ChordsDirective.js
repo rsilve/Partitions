@@ -39,7 +39,7 @@ define(['app'], function (app) {
 		restrict: 'AC',
 		require: "?ngModel",
 		link: function postLink(scope, iElement, iAttrs, ngModel) {
-			//transpose(iElement, scope).insertAfter($(iElement))
+			transpose(iElement, scope).insertAfter($(iElement))
 			scope.$on("chords.error",  function(event, err) {
 				if (iAttrs.chordsError) {
 					scope.$evalAsync(function() { scope[iAttrs.chordsError] = err })

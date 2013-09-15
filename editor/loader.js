@@ -7,6 +7,7 @@ requirejs.config({
     	diagram : { deps : ["jquery"]}
     },
     paths: {
+        transpose: 'bower_components/jquery.chords/transpose',
         grid: 'components/jquery.chords/grid',
         jquery: 'components/jquery/jquery',
         chords: 'components/jquery.chords/jquery.chords',
