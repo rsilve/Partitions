@@ -1,4 +1,4 @@
-pdf : pdf/plans.pdf pdf/bang_bang.pdf pdf/Just_a_Gigolo.pdf pdf/while_my_guitar_gently_weeps.pdf pdf/st_james_infirmary.pdf pdf/clandestino.pdf pdf/walking_on_the_moon.pdf clean
+pdf : pdf/plans.pdf pdf/bang_bang.pdf pdf/Just_a_Gigolo.pdf pdf/while_my_guitar_gently_weeps.pdf pdf/st_james_infirmary.pdf pdf/clandestino.pdf pdf/walking_on_the_moon.pdf pdf/army-dreamers.pdf clean
 
 pdf/%.pdf : src/ly/%.ly
 	mkdir -p pdf
