@@ -5,7 +5,7 @@ title: Mack the knife
 author: Kurt Weill, Bertolt Brecht
 ---
 
-<canvas class="chords">C69|%|Dm9|%|Dm9|G13|C69|%
+<canvas class="chords"  markdown="0">C69|%|Dm9|%|Dm9|G13|C69|%
 Am|%|Dm9|%|Dm9|Dm75b|C|%</canvas>
 
 

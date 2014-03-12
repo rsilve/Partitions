@@ -5,7 +5,7 @@ title: Djangology
 author: Django Reinhardt
 ---
 
-<canvas class="chords">A/C#|Cdim|G/B|Bbdim|Am7|D7|G69|G69_ D7 G/B
+<canvas class="chords"  markdown="0">A/C#|Cdim|G/B|Bbdim|Am7|D7|G69|G69_ D7 G/B
 A/C#|Cdim|G/B|Bbdim|Am7|D7|G69|G69
 Ab69 Eb7|Ab69| A69 Eb7|A69
 A/C#|Cdim|G/B|Bbdim|Am7|D7|G69|G69</canvas>

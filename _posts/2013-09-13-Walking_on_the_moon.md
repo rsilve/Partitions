@@ -8,7 +8,7 @@ Basé sur la [version de Roseaux](http://www.dailymotion.com/video/xsabli_roseau
 
 Tonalite E
 AACAC
-<canvas class="chords"></canvas>
+<canvas class="chords"  markdown="0"></canvas>
 @(A) Dbm | % | E | % | Dbm | % | E | %
 Dbm | % | E | % | Dbm | % | G#m | B/A
 F#m | % | % | % | Dbm | % | % | %

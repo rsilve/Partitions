@@ -6,7 +6,7 @@ category: track
 ---
 
 
-<canvas class="chords">
+<canvas class="chords"  markdown="0">
 F#m | % | % | % 
 |@(A) F#m | % | Bm | C#7/F# 
  F#m | % | Bm | C#7/F# |

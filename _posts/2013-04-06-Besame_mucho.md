@@ -5,12 +5,12 @@ title: Besame mucho
 author: Consuelo Velázquez
 ---
 
-<canvas class="chords">Em |%|Am|%|Am G#dim | Am B7| Em B7 | Em
+<canvas class="chords"  markdown="0">Em |%|Am|%|Am G#dim | Am B7| Em B7 | Em
 Em |%|Am|%|Am G#dim | Am B7| Em B7 | Em
 Am| Em |B7|Em |Am| Em |F# |B7 |
 </canvas>
 
-<canvas class="chords">Em Am6 |%|Am|%|Am G#dim | Am B7| Em B7 | Em
+<canvas class="chords"  markdown="0">Em Am6 |%|Am|%|Am G#dim | Am B7| Em B7 | Em
 E7 Bm75b |E7|Am|%|Em C#m75b |C7 B7| Em Am6 | Em
 Am| Em |B7|Em |Am| Em |F# |B7 |
 </canvas>

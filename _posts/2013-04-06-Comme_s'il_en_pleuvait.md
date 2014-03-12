@@ -5,7 +5,7 @@ title: Comme s'il en pleuvait
 author: Mayra Andrade
 ---
 
-<canvas class="chords">@(A) Am | Dm | Am | E7
+<canvas class="chords"  markdown="0">@(A) Am | Dm | Am | E7
 @(B)  Am | Dm | Am E7  Am | Am E7 Am
 @(C) Am | E7 | % | Am | % | E7  | %  | Am 
  A7 | Dm |% | Am | Am | E7 | % |  %

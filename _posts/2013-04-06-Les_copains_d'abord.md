@@ -8,7 +8,7 @@ author: Georges Brassens
 Voici une tentative d'arrangement "bossa nova" de Georges Brassens.
 Vous trouverez après la grille un enregistrement à écouter de ces accords.
 
-<canvas class="chords">D69 | % | E9 | E9 _ B75+ E9 |
+<canvas class="chords"  markdown="0">D69 | % | E9 | E9 _ B75+ E9 |
 G13 _ _ G#dim | F#75+ _ _ Bbdim|Bm _ E5+ A13 | D7M D69</canvas>
 
    

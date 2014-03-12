@@ -5,7 +5,7 @@ title: Blue bossa
 author: Kenny Dorham
 ---
 
-<canvas class="chords">Cm7|%|Fm7|%|Dm75-|G75+|Cm7|%
+<canvas class="chords"  markdown="0">Cm7|%|Fm7|%|Dm75-|G75+|Cm7|%
 Ebm7|Ab7|Eb7M | %|Dm75-|G75+|Cm7|Dm75- G75+</canvas>
 
 

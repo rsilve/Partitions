@@ -5,7 +5,7 @@ title: Just one of those things
 author: Cole Porter
 ---
 
-<canvas class="chords">Dm|%|A7|%|F7|%|Bm75b|Bbm6
+<canvas class="chords"  markdown="0">Dm|%|A7|%|F7|%|Bm75b|Bbm6
 Am7|Ab13|Gm7|C7|F6|F#dim|Gm7|Gdim A#dim
 Dm|%|A7|%|F7|%|Bm75b|Bbm6
 Am7|Ab13|Gm7|C7|F6|F#dim|Fm7|Bb7

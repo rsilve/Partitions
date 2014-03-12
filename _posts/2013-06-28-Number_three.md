@@ -6,7 +6,7 @@ category: undefined
 ---
 
 
-<canvas class="chords">
+<canvas class="chords"  markdown="0">
 @(A) F7M | Am | Am G/B | C | C G/B | Am | D/F# | G 
 </canvas>
 

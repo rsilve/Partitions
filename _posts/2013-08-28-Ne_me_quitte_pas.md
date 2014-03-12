@@ -7,7 +7,7 @@ category: track
 
 
  
-<canvas class="chords">
+<canvas class="chords"  markdown="0">
 @(A) Am | Am/G | F7M | E7 | Dm | E7/G# | Am | Am/G
 Dm/A | Bdim |  Am | Am/G | Dm/F | E7 | Am | Am
 @(B) Am | F | E7 | Am | Am | F | G | E7
