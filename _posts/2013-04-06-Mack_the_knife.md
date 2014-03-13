@@ -14,6 +14,6 @@ Am|%|Dm9|%|Dm9|Dm75b|C|%</canvas>
 <canvas class="diagram"  >Dm9:3:x5355x</canvas>
 <canvas class="diagram"  >G13:3:3x345x</canvas>
 <canvas class="diagram"  >Dm75b:5:x5656x</canvas>
-<div>
+</div>
 
 

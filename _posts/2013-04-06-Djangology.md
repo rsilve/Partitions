@@ -19,6 +19,6 @@ A/C#|Cdim|G/B|Bbdim|Am7|D7|G69|G69</canvas>
 <canvas class="diagram"  >Am7:3:5x55xx</canvas>
 <canvas class="diagram"  >D7:3:5x45xx</canvas>
 <canvas class="diagram"  >G69:1:3x223x</canvas>
-<div>
+</div>
 
 
