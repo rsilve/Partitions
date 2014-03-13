@@ -16,7 +16,7 @@ Ebm7|Ab7|Eb7M | %|Dm75-|G75+|Cm7|Dm75- G75+</canvas>
 <canvas class="diagram"  >G75+:3:3x344x</canvas>
 <canvas class="diagram"  >Ebm7:6:x68676</canvas>
 <canvas class="diagram"  >Ab7:4:464544</canvas>
-<div>
+</div>
 
 
 
