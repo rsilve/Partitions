@@ -10,13 +10,13 @@ Am|%|Dm9|%|Dm9|Dm75b|C|%</canvas>
 
 
 
-<canvas class="diagram">C69:1:o3223o</canvas>
+<canvas class="diagram"  markdown="span">C69:1:o3223o</canvas>
 
-<canvas class="diagram">Dm9:3:x5355x</canvas>
+<canvas class="diagram"  markdown="span">Dm9:3:x5355x</canvas>
 
-<canvas class="diagram">G13:3:3x345x</canvas>
+<canvas class="diagram"  markdown="span">G13:3:3x345x</canvas>
 
-<canvas class="diagram">Dm75b:5:x5656x</canvas>
+<canvas class="diagram"  markdown="span">Dm75b:5:x5656x</canvas>
 
 
 

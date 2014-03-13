@@ -12,19 +12,19 @@ A/C#|Cdim|G/B|Bbdim|Am7|D7|G69|G69</canvas>
 
 
 
-<canvas class="diagram">A/C#:7:9x79xx</canvas>
+<canvas class="diagram"  markdown="span">A/C#:7:9x79xx</canvas>
 
-<canvas class="diagram">Cdim:7:8x78xx</canvas>
+<canvas class="diagram"  markdown="span">Cdim:7:8x78xx</canvas>
 
-<canvas class="diagram">G/B:5:7x57xx</canvas>
+<canvas class="diagram"  markdown="span">G/B:5:7x57xx</canvas>
 
-<canvas class="diagram">Bbdim:5:6x56xx</canvas>
+<canvas class="diagram"  markdown="span">Bbdim:5:6x56xx</canvas>
 
-<canvas class="diagram">Am7:3:5x55xx</canvas>
+<canvas class="diagram"  markdown="span">Am7:3:5x55xx</canvas>
 
-<canvas class="diagram">D7:3:5x45xx</canvas>
+<canvas class="diagram"  markdown="span">D7:3:5x45xx</canvas>
 
-<canvas class="diagram">G69:1:3x223x</canvas>
+<canvas class="diagram"  markdown="span">G69:1:3x223x</canvas>
 
 
 
