@@ -3,7 +3,9 @@ layout: page
 title: Playlist Lisa trio
 ---
 
- 	* Summertime [(Grille)]({% post_url 2013-04-06-Summertime %})
+Play list Lisa Trio
+
+ 	* Summertime [Grille]({% post_url 2013-04-06-Summertime %})
  	* St James infirmary [(Grille)]({% post_url 2013-04-06-St_James_infirmary %})
  	* You'd be so nice to come home to [(Grille)]({% post_url 2013-04-06-You'd_be_so_nice_to_come_home_to %})
  	* Willow weep for me [(Grille)]({% post_url 2013-04-06-Willow_weep_for_me %})
