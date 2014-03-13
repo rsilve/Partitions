@@ -14,7 +14,7 @@ Dm/A | Bdim |  Am | Am/G | Dm/F | E7 | Am | Am
 Am | Gm | F | E7 Am| C | F6 | E7 | Dm/B E7 
 </canvas>
 
- {::nomarkdown}**d**
+ {::nomarkdown}
 <canvas class="diagram"  markdown="span">Am/G:1:3o231o</canvas>
 <canvas class="diagram"  markdown="span">F7M:1:1x221x</canvas>
 <canvas class="diagram"  markdown="span">E7/G#:1:4xo43o</canvas>
