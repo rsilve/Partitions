@@ -18,5 +18,5 @@ Play list Lisa Trio
 * Ain't misbehavin' [(Grille)]({% post_url 2013-04-06-Ain't_misbehavin' %})
 * You don't know what love is [(Grille)]({% post_url 2013-04-06-You_don't_know_what_love_is %})
 * Why don't you do right [(Grille)]({% post_url 2013-04-06-Why_don't_you_do_right %})
-* Dance me to the end of love 
+* Dance me to the end of love [(Grille)]({% post_url 2014-04-25-Dance_me_to_the_end_of_love %})
 * God bless the child [(Grille)]({% post_url 2013-04-06-God_bless_the_child %})
