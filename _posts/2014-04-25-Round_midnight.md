@@ -7,7 +7,7 @@ category: track
 
 
 <canvas class="chords"  markdown="0">
-Am75b | D7alt | Gm75b | C7alt | Fm75b | Bb7alt | Eb | x
+Am75b | D75b| Gm75b | C75b|  Fm75b | Bb75b | Eb | X
 </canvas>
 
 <canvas class="chords"  markdown="0">
