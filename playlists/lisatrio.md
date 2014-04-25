@@ -9,7 +9,7 @@ Play list Lisa Trio
 * St James infirmary [(Grille)]({% post_url 2013-04-06-St_James_infirmary %})
 * You'd be so nice to come home to [(Grille)]({% post_url 2013-04-06-You'd_be_so_nice_to_come_home_to %})
 * Willow weep for me [(Grille)]({% post_url 2013-04-06-Willow_weep_for_me %})
-* Love is here to stay 
+* Love is here to stay [(Grille)]({% post_url 2014-04-25-Love_is_her_to_stay %})
 * Georgia [(Grille)]({% post_url 2013-04-06-Georgia_on_my_mind %})
 * Just one of those things [(Grille)]({% post_url 2013-04-06-Just_one_of_those_things %})
 * Round midnight 
