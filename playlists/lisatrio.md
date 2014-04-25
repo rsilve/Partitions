@@ -14,7 +14,7 @@ Play list Lisa Trio
 * Just one of those things [(Grille)]({% post_url 2013-04-06-Just_one_of_those_things %})
 * Round midnight 
 * Mana [(Grille)]({% post_url 2013-04-06-Mana %})
-* Body and soul 
+* Body and soul [(Grille)]({% post_url 2014-04-25-Body_and_soul %})
 * Ain't misbehavin' [(Grille)]({% post_url 2013-04-06-Ain't_misbehavin' %})
 * You don't know what love is [(Grille)]({% post_url 2013-04-06-You_don't_know_what_love_is %})
 * Why don't you do right [(Grille)]({% post_url 2013-04-06-Why_don't_you_do_right %})
