@@ -20,5 +20,5 @@ Play list Lisa Trio
 * Why don't you do right [(Grille)]({% post_url 2013-04-06-Why_don't_you_do_right %})
 * Dance me to the end of love [(Grille)]({% post_url 2014-04-25-Dance_me_to_the_end_of_love %})
 * God bless the child [(Grille)]({% post_url 2013-04-06-God_bless_the_child %})
-* Voce E Eu [(Grille)]({% post_url 2014-06-05-Voce_E_Eu %}) (Transposer en Eb -- 1/2 ton plus haut)
+* Voce E Eu [(Grille)]({% post_url 2014-06-05-Voce_E_Eu %})
 * Wave [(Grille)]({% post_url 2014-06-05-Wave %})
