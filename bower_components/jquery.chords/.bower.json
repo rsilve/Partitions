@@ -20,11 +20,11 @@
     "README*"
   ],
   "homepage": "https://github.com/rsilve/jquery.chords",
-  "_release": "master",
+  "_release": "e3875b7463",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "f2ef1fd3cf6d00d377ffafc480d47761756d6420"
+    "commit": "e3875b7463cdaacf1b5b35148fef9ad4f7af4345"
   },
   "_source": "git://github.com/rsilve/jquery.chords.git",
   "_target": "*",
